@@ -1,0 +1,67 @@
+@import "../../assets/styles/variables.scss";
+
+body{
+  color: $fondo;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .salir{
+    width: 5%;
+    background-color: $cafe;
+    font-family: $letraTitulos;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 19px;
+    color: $fondo;
+    border: none;
+    position: relative;
+    left: 20px;
+    top: 0;
+
+  }
+    & h1{
+        color: $cafe;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 70px;
+        font-family: $letraTitulos
+    }
+
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    .form__input {
+      padding: 10px;
+      border: 1px solid $oscuro;
+      border-radius: 5px;
+      width: 30%;
+      font-family: $letraCuerpo;
+      font-size: 25px;
+      color: $cafe;
+      &:focus {
+        outline: none;
+        border-color: $verde; 
+      }
+    }
+    .form__button{
+      padding: 10px 20px;
+      background-color: $oscuro;
+      color: $fondo;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 10%;
+      margin-bottom: 30px;
+      font-family: $letraTitulos;
+      font-size: 23px;
+      &:hover {
+        background-color: $verde;
+      }
+    }
+  }
+}

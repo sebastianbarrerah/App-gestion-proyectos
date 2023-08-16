@@ -1,0 +1,55 @@
+@import "../../assets/styles/variables.scss";
+
+body{
+  background-color: $fondo;
+  margin: 5% 0;
+}
+.lista {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  
+  &__ol {
+    list-style-type: none;
+    width: 50%;
+    padding: 0;
+
+  
+    
+    &-li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      font-family: $letraTareas;
+      padding: 10px;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      background-color: $cafe;
+      gap: 10px;
+      cursor: pointer;
+      
+      
+      .container__btn{
+        display: flex;
+        gap: 15px;
+        margin-left: 20px;
+        .btn__borrar{
+          height: 20px;
+        }
+        .btn__editar{
+          height: 20px;
+        }
+      }
+      
+    }
+    &-li:hover{
+      background-color: $verde;
+      height: 28px;
+      font-size: 23px;
+      cursor: pointer;
+    }
+    
+  }
+}
